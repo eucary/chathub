@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.faq-page {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.faq-header {
+  color: white;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 900;
+  margin-top: 5px;
+  font-size: 70px;
+  padding: 40px;;
+}
+
+.faq-content {
+  display: flex;  
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+}   
+.faq-qa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px; /* space between items */
+ /* or 100% or any width you want */
+  margin: 0 auto;
+}
+.faq1, .faq2, .faq3 {
+  width: 35%;
+  height: 250px;
+  background: #3C5B6F;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+    justify-content: center;
+}
+
+.faq1 question, .faq2 question, .faq3 question {
+  color: white;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+}
+.faq1 p, .faq2 p, .faq3 p {
+  color: white;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 100;
+  margin-top: 25px;
+  font-size: 20px;
+}

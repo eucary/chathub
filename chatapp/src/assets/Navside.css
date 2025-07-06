@@ -1,0 +1,41 @@
+.navside {
+  width: 50px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(255, 255, 255, 0.1);
+
+}
+
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  
+}
+
+.nav-links ul li {
+  margin-bottom: 20px; /* Adjust the value as needed */
+  cursor: pointer;
+}
+.nav-links ul li:hover {
+  transform: translateX(4px); /* Lifts the item up */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Optional: subtle shadow */
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.nav-links button {
+  margin-top: 370px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.nav-links button:hover {
+  transform: translateX(4px); /* Lifts the item up */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* Optional: subtle shadow */
+  transition: all 0.2s;
+}

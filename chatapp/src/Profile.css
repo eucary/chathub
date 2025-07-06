@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.profile-body {
+    width: 93%;
+    display: flex;
+     justify-content: center;
+    color: white;
+    margin-left: 100px;
+    padding-top: 50px;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #3C5B6F;
+    border-radius: 10px;
+    padding-left: 100px;
+    width: 70%;
+}
+.profile-info{
+    display: flex;
+    flex-direction: row;
+    font-family: "League Spartan", sans-serif;
+    gap: 40px;
+
+}
+.inputsave {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+}
+.inputsave input {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 200;
+  height: 40px;
+  border: 1px solid #ccc;
+  background-color: #D9D9D9;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  font-size: 16px;
+}
+.savebtn { 
+    display: flex;
+    width: 100%;
+    
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.savebtn button {
+    border-radius: 5px;
+    width: 150px;
+    height: 30px;
+    background-color: #D9D9D9;
+    color: white;
+    border: none;
+}
+.savebtn button:hover {
+  background-color: #A9A9A9;
+}
+.inputpic {
+    display: flex;
+    flex-direction: column;
+}
+.personalinfo{
+
+    margin-bottom: 50px;
+    margin-right: 100px;
+}
+.personalinfo-item{
+    width: 80%;
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+
+.personalinfo-item input {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 200;
+  height: 40px;
+  border: 1px solid #ccc;
+  background-color: #D9D9D9;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  font-size: 16px;
+  width: 300px;
+}
+
+.personalinfo .savebtn { 
+   
+    width: 100%;
+ 
+    margin-top: 20px;
+}

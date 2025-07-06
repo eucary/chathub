@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+html, body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  margin: 0;     /* Remove default margin */
+  padding: 0;
+  height: 100vh;
+}
+
+
+.logoside {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  background-color: #3C5B6F;
+}
+
+.logoside img {
+  width: 60%;
+  height: auto;
+}
+
+.logoside h1 {
+  color: white;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 900;
+  margin-top: 5px;
+  font-size: 70px;
+}
+.login {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #D9D9D9;
+  height: 100%;
+}
+.login-form{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: white;
+  padding-left: 40px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.welcome-text{
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  margin-bottom: 5px;;
+}
+.form-title {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 500;
+  font-size: 35px;
+}
+.login-form form {
+  font-family: 'League Spartan', sans-serif;
+
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+  row-gap: 10px;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.login-form form input {
+  width: 100%;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 200;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #D9D9D9;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.button-container button {
+  width: 45%;
+  padding: 10px;
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  background-color: #3C5B6F;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button-container button:hover {
+  background-color: #153448;
+}
+
+

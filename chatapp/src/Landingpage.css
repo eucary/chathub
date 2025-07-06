@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.landingpage-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100vh;
+  margin-left: 90px;
+  padding: 0px;
+  gap: 15px;
+}
+
+.chatmenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95vh;
+  width: 25%;
+  margin: 0px;
+  margin-left: 20px;
+  background-color: #3C5B6F;
+}
+.chatmenu input {
+  width: 80%;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  padding-left: 20px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.chatmenu-options{
+  border-radius: 10px;
+  background-color: #D9D9D9;
+  height: 40px; ;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+}
+.chatbox-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* Take up remaining space */
+  overflow: hidden;
+}
+
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 95vh;
+  width: 45%;
+  background-color: #3C5B6F;
+}
+
+.chatbox-name {
+    font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  height: 70px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  font-size: 25px;
+  background-color: #D9D9D9;
+  color: rgb(254, 254, 254);
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+.chatbox-send {
+      font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+}
+.typemessage{
+      font-family: "League Spartan", sans-serif;
+  font-weight: 200;
+}
+
+.chatai {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 95vh;
+  width: 24%;
+  background-color: #3C5B6F;
+  position: relative;
+}
+.chatbox-content1 {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.chatai-form-container {
+  border-top: 1px solid #ccc;
+
+  display: flex;
+  align-items: center;
+}
+.chatai-form-container form {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+.chatai-form-container input {
+  flex: 1;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 10px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+}
+.chatai-form-container .chatai-send {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 14px;
+        font-family: "League Spartan", sans-serif;
+  font-weight: 600;
+  background-color: #D9D9D9;
+  color: black;
+  cursor: pointer;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  
+  
+}
+.chatmess-ai {
+        font-family: "League Spartan", sans-serif;
+  font-weight: 200;
+}
+
+.chatai button {
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 20px;
+  margin-top: 20px;
+  background-color: #D9D9D9;
+  color: white;
+  cursor: pointer;
+    font-family: "League Spartan", sans-serif;
+  font-weight: 800;
+  height: 40px;
+}
+.chatai button:hover {
+  background-color: #A9A9A9;
+}
+.chatbox.large, .chatai.large {
+  width: 70%;
+  height: 95vh;
+  transition: all 0.3s;
+}
+.chatbox.small, .chatai.small {
+  width: 40%;
+  height: 95vh;
+  transition: all 0.3s;
+}
+
+.message.me, .message.other {
+  display: block;
+  max-width: 60%;
+  word-break: break-word;
+  margin: 8px 0;
+  padding: 8px 16px;
+  font-size: 18px;
+}
+
+.message.me {
+  align-self: flex-end;
+  text-align: right;
+  color: #000000;
+  background: #d0f0ff;
+  border-radius: 20px 20px 4px 20px;
+  
+}
+
+.message.other {
+  align-self: flex-start;
+  text-align: left;
+  color: #333;
+  background: #e5e5e5;
+  border-radius: 20px 20px 20px 4px;
+}
+
+.chatbox-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.chatmenu-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100% - 80px); /* Adjust for input height */
+  overflow-y: auto;
+}
+.messages-list {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 200;
+}
+.chatbox-input {
+  display: flex;
+  padding: 16px;
+  border-top: 1px solid #ccc;
+  
+}
+.typemessage {
+      font-family: "League Spartan", sans-serif;
+  font-weight: 200;
+}
+
+.search-results {
+  position: absolute;
+  top: 60px; /* adjust if needed, should be just below the input */
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  z-index: 100;
+  max-height: 200px;
+  overflow-y: auto;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+
+}
+
+.search-result-item {
+  padding: 12px 20px;
+  cursor: pointer;
+  color: #333;
+  background: #fff;
+  transition: background 0.2s;
+      font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+}
+
+.search-result-item:hover {
+  background: #e5e5e5;
+}
+
+.search {
+    font-family: "League Spartan", sans-serif;
+  font-weight: 400;
+  height: 40px;
+}
+
+
+.chatmess-ai {
+  padding: 14px;
+  display: inline-block;
+  max-width: 70%;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+.user-bubble {
+  background: #d0f0ff;
+  border-radius: 20px 20px 4px 20px;
+}
+
+.ai-bubble {
+  background: #eee;
+  border-radius: 20px 20px 20px 4px;
+}

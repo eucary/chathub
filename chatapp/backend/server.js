@@ -260,7 +260,7 @@ const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
 const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
   method: 'POST',
   headers: {
-    'Authorization': `Bearer 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`,
+    'Authorization': `Bearer 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`,
     'Content-Type': 'application/json',
   },
   body: JSON.stringify({

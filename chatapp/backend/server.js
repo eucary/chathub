@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require('express');
 const mysql = require('mysql2');
 const cors = require('cors');
@@ -249,21 +250,24 @@ app.get('/api/chats', (req, res) => {
 });
 
 
+
 app.post('/api/chatai', async (req, res) => {
   const { messages } = req.body;
 
   try {
-    const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
-      method: 'POST',
-      headers: {
-        'Authorization': `Bearer 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`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: 'deepseek/deepseek-r1-0528:free',
-        messages: messages,
-      }),
-    });
+const OPENROUTER_API_KEY = process.env.OPENROUTER_API_KEY;
+
+const response = await fetch('https://openrouter.ai/api/v1/chat/completions', {
+  method: 'POST',
+  headers: {
+    'Authorization': `Bearer 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`,
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    model: 'deepseek/deepseek-r1-0528:free',
+    messages: messages,
+  }),
+});
 
     const data = await response.json();
 
@@ -279,6 +283,7 @@ app.post('/api/chatai', async (req, res) => {
     res.status(500).json({ error: 'Failed to fetch AI response' });
   }
 });
+
 app.post('/api/ai-messages', (req, res) => {
   const { user_email, role, content } = req.body;
 

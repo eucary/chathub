@@ -14,7 +14,7 @@ function Landingpage() {
   const profilePicUrl = selectedUser?.profilePicUrl;
   const [aiMessages, setAiMessages] = useState([]);
 const [aiInput, setAiInput] = useState('');
-
+const apiKey = import.meta.env.VITE_OPENROUTER_API_KEY;
   // Fetch chat list (users you have chatted with)
   useEffect(() => {
   const userEmail = localStorage.getItem('userEmail');

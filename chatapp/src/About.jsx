@@ -7,8 +7,8 @@ function About() {
                 <Navside/>
                 <div className="about-content">
                     <div className="imageside">
-                        <img src="public/Image 1.png" alt="Logo" />
-                        <img src="public/Image 2.png" alt="Logo" />
+                    <img src="/image 1.png" alt="Logo" />
+                    <img src="/image 2.png" alt="Logo" />
                     </div>
                     <div className="textside">
                         <div className="titletext">
